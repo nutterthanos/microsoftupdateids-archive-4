@@ -69,11 +69,3 @@ jobs:
           git add ../update.py
           git commit -m "Incremented UpdateID in update.py"
           git push origin ${{ github.ref }}
-
-      - name: Commit and push changes - update.py
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add ../update.py
-          git commit -m "Incremented UpdateID in update.py"
-          git push origin ${{ github.ref }}
